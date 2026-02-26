@@ -990,6 +990,14 @@
     [
       "56050d79-5900-47d6-893d-3da0e8bf5810",
       "ID EEPROM"
+    ],
+    [
+      "759d6f3d-0961-4f50-af85-ab5d1408915a",
+      "I2C mutliplexer"
+    ],
+    [
+      "aed7f260-473a-4311-a84f-eca4f488cc9b",
+      "Thermocouple"
     ]
   ],
   "text_variables": {
