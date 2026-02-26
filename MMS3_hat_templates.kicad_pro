@@ -561,20 +561,7 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "Net-(D4-K)": [
-        "50V "
-      ],
-      "Net-(J8-Pin_1)": [
-        "50V "
-      ],
-      "U_reg": [
-        "50V "
-      ],
-      "Vin": [
-        "50V "
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": [
       {
         "netclass": "USB_90_DIFF",
@@ -1001,16 +988,8 @@
       "Bus_switch"
     ],
     [
-      "f11c3b61-ae6a-4858-9d37-bbf426f44fb0",
-      "Power Connector"
-    ],
-    [
       "56050d79-5900-47d6-893d-3da0e8bf5810",
       "ID EEPROM"
-    ],
-    [
-      "c6fe6645-c1eb-4317-9e6f-134a73c9fa05",
-      "Buck Regulator"
     ]
   ],
   "text_variables": {
