@@ -187,7 +187,9 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.5,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -988,6 +990,10 @@
       "Bus_switch"
     ],
     [
+      "714c9717-36e6-4fc6-92de-761da0dd61c7",
+      "Thermocouple1"
+    ],
+    [
       "56050d79-5900-47d6-893d-3da0e8bf5810",
       "ID EEPROM"
     ],
@@ -998,6 +1004,34 @@
     [
       "aed7f260-473a-4311-a84f-eca4f488cc9b",
       "Thermocouple"
+    ],
+    [
+      "e702fe26-ce29-4814-8993-b3becea4c408",
+      "Thermocouple2"
+    ],
+    [
+      "bca17339-29a4-4d47-9cd7-687821e17a34",
+      "Thermocouple3"
+    ],
+    [
+      "f8b45427-59cc-4978-bfb9-68c88167b151",
+      "Thermocouple4"
+    ],
+    [
+      "12d6b693-b2d0-45e2-8962-a502dc17658e",
+      "Thermocouple5"
+    ],
+    [
+      "6b51ebb1-3268-4233-b597-dccd8d194741",
+      "Thermocouple6"
+    ],
+    [
+      "66f4f1b9-297d-4254-bbaa-e555fb134b73",
+      "Thermocouple7"
+    ],
+    [
+      "9077b647-794c-4db0-aab1-e4d5c927aedb",
+      "Thermocouple8"
     ]
   ],
   "text_variables": {

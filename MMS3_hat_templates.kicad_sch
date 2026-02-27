@@ -13,6 +13,167 @@
 		(comment 2 "Designed in poland")
 	)
 	(lib_symbols
+		(symbol "Device:C_Polarized"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Graphic:SYM_ESD_Small"
 			(exclude_from_sim no)
 			(in_bom no)
@@ -502,27 +663,40 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_JLCPCB-Manufacturing:Tooling Hole, PCM_JLCPCB, 1.152mm"
+		(symbol "Regulator_Linear:AZ1117H-ADJ"
+			(pin_names
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "H"
-				(at 1.778 0 0)
+			(property "Reference" "U14"
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "AZ1117H-3.3TRE1"
+				(at 0 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "PCM_JLCPCB:Hole_Tooling_JLCPCB"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/products_inactive_data/AZ1117.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -531,7 +705,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
+			(property "Description" "1A 20V LDO Linear Regulator, SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
@@ -540,7 +714,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
+			(property "ki_keywords" "Adjustable Voltage Regulator 1A Positive LDO"
 				(at 0 0 0)
 				(effects
 					(font
@@ -549,16 +723,206 @@
 					(hide yes)
 				)
 			)
-			(symbol "Tooling Hole, PCM_JLCPCB, 1.152mm_0_1"
-				(circle
-					(center 0 0)
-					(radius 0.635)
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AZ1117H-ADJ_0_1"
+				(rectangle
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AZ1117H-ADJ_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -690,31 +1054,73 @@
 		)
 		(uuid "8a358ab3-3f19-4905-8444-600ab8f4afd3")
 	)
-	(text "DODAJ LDO 3,3V "
-		(exclude_from_sim no)
-		(at 223.012 153.162 0)
-		(effects
-			(font
-				(size 10 10)
-				(thickness 4.4)
-				(bold yes)
-			)
-		)
-		(uuid "a3d79533-6523-4511-9aca-24eb7a9e4739")
-	)
 	(junction
-		(at 101.6 77.47)
+		(at 53.34 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4d1ab214-1e7d-4314-b17b-87631842d2c4")
+		(uuid "195c4b02-512b-42b7-ba46-7c65c6c02f93")
+	)
+	(junction
+		(at 53.34 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37e68cad-d8ff-429d-972a-aedbc1cd049c")
+	)
+	(junction
+		(at 31.75 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3fe46810-078e-45fe-970d-ddf0c0bb393a")
+	)
+	(junction
+		(at 43.18 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e65ef45-8d9d-4763-8bf7-a7f9b176b1f9")
+	)
+	(junction
+		(at 99.06 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be431ea7-edc2-4e31-beb3-d31d828ffaa0")
 	)
 	(no_connect
 		(at 96.52 82.55)
 		(uuid "1294e8cc-6db1-48df-b2b9-522db6cbe0fa")
 	)
+	(wire
+		(pts
+			(xy 43.18 138.43) (xy 43.18 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08b6c947-5494-43e4-b167-42b9fe6331ce")
+	)
 	(bus
 		(pts
-			(xy 96.52 77.47) (xy 101.6 77.47)
+			(xy 168.91 66.04) (xy 170.18 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15352e20-941d-42cd-959f-2afec42a453b")
+	)
+	(bus
+		(pts
+			(xy 226.06 104.14) (xy 227.33 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25fc4a59-c4ea-45b7-885f-3650bfb9b8dd")
+	)
+	(bus
+		(pts
+			(xy 96.52 77.47) (xy 99.06 77.47)
 		)
 		(stroke
 			(width 0)
@@ -724,13 +1130,53 @@
 	)
 	(bus
 		(pts
-			(xy 101.6 77.47) (xy 101.6 21.59)
+			(xy 102.87 124.46) (xy 105.41 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "271bd9f4-3f35-43fb-885a-3782b3fe6768")
+	)
+	(wire
+		(pts
+			(xy 215.9 21.59) (xy 217.17 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2740e090-a091-47ad-a62e-1a518bffcf58")
+	)
+	(wire
+		(pts
+			(xy 146.05 55.88) (xy 149.86 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cf27fe8-61fb-42c4-9010-0da7cb2d4ad0")
+	)
+	(bus
+		(pts
+			(xy 99.06 77.47) (xy 99.06 21.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "35687ea6-26bf-487e-be8d-8fe8f7b1924b")
+	)
+	(wire
+		(pts
+			(xy 53.34 127) (xy 53.34 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a4b8ff3-39d1-4d9d-9cda-58d01e5cf6bb")
 	)
 	(bus
 		(pts
@@ -744,6 +1190,26 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 138.43) (xy 43.18 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4965188e-52d4-4819-ad09-bdcfb805f70a")
+	)
+	(bus
+		(pts
+			(xy 168.91 105.41) (xy 170.18 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5746076f-e896-4023-930b-42367473febc")
+	)
+	(wire
+		(pts
 			(xy 24.13 176.53) (xy 24.13 180.34)
 		)
 		(stroke
@@ -752,15 +1218,35 @@
 		)
 		(uuid "57e76bdc-cb2f-4d39-bfd4-46dd6fc362c7")
 	)
-	(bus
+	(wire
 		(pts
-			(xy 101.6 77.47) (xy 119.38 77.47)
+			(xy 146.05 68.58) (xy 149.86 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5dd7deda-7946-4037-a60b-03d2b679da8f")
+		(uuid "65511db1-81e6-4b27-86f2-c6cba57bbd11")
+	)
+	(bus
+		(pts
+			(xy 227.33 31.75) (xy 228.6 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "695f8b0e-0774-4521-9b24-1dbc90d5122b")
+	)
+	(wire
+		(pts
+			(xy 53.34 138.43) (xy 59.69 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dcdb9de-30e4-4853-85e3-83ff3b2296d8")
 	)
 	(wire
 		(pts
@@ -771,6 +1257,46 @@
 			(type default)
 		)
 		(uuid "70605165-b1d3-4f2d-9f16-6a6b57660657")
+	)
+	(wire
+		(pts
+			(xy 273.05 93.98) (xy 274.32 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7624699e-8fbf-442f-8103-8b5b2671169f")
+	)
+	(wire
+		(pts
+			(xy 146.05 62.23) (xy 149.86 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7675764c-d691-4b72-9660-15480e9c8765")
+	)
+	(wire
+		(pts
+			(xy 31.75 130.81) (xy 35.56 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bb89686-e40d-4c9c-b864-0514623d2837")
+	)
+	(bus
+		(pts
+			(xy 227.33 66.04) (xy 228.6 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d61dcc5-4732-447b-ba92-2414b5b583e2")
 	)
 	(bus
 		(pts
@@ -784,17 +1310,67 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 104.14) (xy 170.18 44.45)
+			(xy 50.8 130.81) (xy 53.34 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "adaffe15-5f7d-411b-8f23-ce05d6586fb2")
+		(uuid "87012660-2f05-4c02-abcf-067d2ff11cea")
+	)
+	(wire
+		(pts
+			(xy 43.18 138.43) (xy 53.34 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99a311bf-b8d9-416a-8337-8249fb1a3287")
+	)
+	(wire
+		(pts
+			(xy 215.9 130.81) (xy 217.17 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ace48fc-de7e-4f9f-a296-4b0b64e34127")
+	)
+	(wire
+		(pts
+			(xy 146.05 74.93) (xy 149.86 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f111a44-9a98-4c44-9396-ffd206c81f73")
+	)
+	(wire
+		(pts
+			(xy 146.05 81.28) (xy 149.86 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a885f461-0dde-4ab1-b2d8-0bd187b69c9e")
 	)
 	(bus
 		(pts
-			(xy 101.6 21.59) (xy 95.25 21.59)
+			(xy 226.06 140.97) (xy 227.33 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa6f0c59-5ed6-4c6b-a021-29e772722f0f")
+	)
+	(bus
+		(pts
+			(xy 99.06 21.59) (xy 95.25 21.59)
 		)
 		(stroke
 			(width 0)
@@ -814,53 +1390,163 @@
 	)
 	(bus
 		(pts
-			(xy 96.52 80.01) (xy 113.03 80.01)
+			(xy 96.52 80.01) (xy 100.33 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b41e0780-c837-4c54-9baf-c2b57e3414ab")
-	)
-	(bus
-		(pts
-			(xy 113.03 80.01) (xy 113.03 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf099572-5bf5-4a12-9bfa-2174abb57cc8")
+		(uuid "b3e6b2e0-12e8-4301-92b4-eb92163d9f16")
 	)
 	(wire
 		(pts
-			(xy 170.18 44.45) (xy 163.83 44.45)
+			(xy 215.9 55.88) (xy 217.17 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "da99890a-3611-4dde-8816-365b1740d7e1")
-	)
-	(bus
-		(pts
-			(xy 113.03 114.3) (xy 118.11 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4364ecc-bcad-41fd-baaa-5a43d77b8671")
+		(uuid "b6494365-7414-404b-9abd-a8f658ad4fb9")
 	)
 	(wire
 		(pts
-			(xy 163.83 104.14) (xy 170.18 104.14)
+			(xy 273.05 130.81) (xy 274.32 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fdd418c1-9e46-4501-9c94-39b784639f98")
+		(uuid "b925c76c-5791-4569-8bc1-63c2b0901337")
+	)
+	(bus
+		(pts
+			(xy 168.91 140.97) (xy 170.18 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba6da23c-dc9f-430d-9af2-f7e5f8da1184")
+	)
+	(bus
+		(pts
+			(xy 100.965 77.47) (xy 99.06 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bea6f875-0a00-41c7-98be-fc23c3599214")
+	)
+	(wire
+		(pts
+			(xy 274.32 21.59) (xy 275.59 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfbfa556-8184-4f2d-b2d0-75dd4ffc9e5b")
+	)
+	(bus
+		(pts
+			(xy 168.91 31.75) (xy 170.18 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c15c6a94-0bec-4006-b9e5-1a3ddb4ecfde")
+	)
+	(wire
+		(pts
+			(xy 215.9 95.25) (xy 217.17 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbe244fc-85e1-48b4-8ab3-d4d9132aea37")
+	)
+	(wire
+		(pts
+			(xy 274.32 55.88) (xy 275.59 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfaf67e5-49d5-49b3-91d0-bd9b4908691c")
+	)
+	(wire
+		(pts
+			(xy 146.05 44.45) (xy 149.86 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db369944-a448-4114-a8cb-aaacba1a343e")
+	)
+	(wire
+		(pts
+			(xy 151.13 114.3) (xy 152.4 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5f543da-8151-43e4-98b1-c6296610bdab")
+	)
+	(wire
+		(pts
+			(xy 146.05 91.44) (xy 149.86 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7ca977d-a7ca-4a1f-a5c3-27eebbaabb6b")
+	)
+	(wire
+		(pts
+			(xy 146.05 49.53) (xy 149.86 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4078560-241f-411a-9392-9e0a25a27237")
+	)
+	(wire
+		(pts
+			(xy 146.05 86.36) (xy 149.86 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f83a1c45-105d-4b85-ad10-64bda83e5480")
+	)
+	(wire
+		(pts
+			(xy 53.34 130.81) (xy 59.69 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbf1c680-eb5b-425e-9c8f-42f575977e28")
+	)
+	(wire
+		(pts
+			(xy 31.75 127) (xy 31.75 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fef6e5b4-660d-4b29-9546-0d3740f4ef4f")
 	)
 	(image
 		(at 74.93 59.69)
@@ -8783,18 +9469,369 @@
 			"TkSuQmCC"
 		)
 	)
+	(label "GPIO_3"
+		(at 275.59 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d85d6c0-5308-414b-a973-aaa6255bb7db")
+	)
+	(label "ChainBus{SPI}"
+		(at 102.87 124.46 180)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify right bottom)
+		)
+		(uuid "0e6f5272-9154-4820-9ebf-3961f2d8558b")
+	)
+	(label "ChainBus{SPI}"
+		(at 168.91 31.75 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a5e50b3-83a5-42b4-a2f5-86cc88a3c5bf")
+	)
+	(label "GPIO_5"
+		(at 149.86 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "203ba62a-c786-40f4-a243-608b95ee7826")
+	)
+	(label "ChainBus{SPI}"
+		(at 226.06 104.14 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "303f1c45-7303-4860-8e59-56def4d19326")
+	)
+	(label "GPIO_1"
+		(at 275.59 21.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "37120986-3c21-4c89-9ff6-de8a3d60edfa")
+	)
+	(label "ChainBus{SPI}"
+		(at 168.91 66.04 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d0644ec-7f65-4002-b31e-9af065815f3f")
+	)
+	(label "GPIO_4"
+		(at 149.86 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "41323cf7-62c5-4e2d-8efd-35e4812a5bc0")
+	)
+	(label "GPIO_0"
+		(at 217.17 21.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4788b9bf-9cf5-412d-bb5b-4bc0ac591288")
+	)
+	(label "GPIO_0"
+		(at 149.86 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "491ebabd-5930-4361-afcc-6ab7496655c4")
+	)
+	(label "GPIO_3"
+		(at 149.86 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b731380-63b0-4325-895d-bf62260c0495")
+	)
+	(label "GPIO_5"
+		(at 274.32 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5afa917a-f642-4150-8c58-7a026e96ea88")
+	)
+	(label "GPIO_7"
+		(at 149.86 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5bd1e809-2be7-4095-b310-5776f211dd2c")
+	)
+	(label "ChainBus{SPI}"
+		(at 168.91 140.97 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c46657d-c00d-48fd-9072-9b1b2ffb4015")
+	)
+	(label "GPIO_8"
+		(at 152.4 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5faf5c15-aa82-4e5c-aa1f-329304a2a034")
+	)
+	(label "GPIO_6"
+		(at 149.86 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "63c38522-5345-4b94-9058-71f929da24b8")
+	)
+	(label "GPIO_6"
+		(at 217.17 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "76c15b22-85e3-47bd-826f-a143cfb74458")
+	)
+	(label "ChainBus{SPI}"
+		(at 168.91 105.41 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c1b54d0-e097-4809-8789-c1724d6b4df2")
+	)
+	(label "GPIO_2"
+		(at 149.86 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7cecbf7d-8bd4-4e10-8396-eadf39af6426")
+	)
+	(label "ChainBus{SPI}"
+		(at 227.33 66.04 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "900bfe16-07d7-40c9-8dc1-2368329896e8")
+	)
+	(label "GPIO_1"
+		(at 149.86 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "932d99a4-6cb3-436a-8494-82d44b6a1079")
+	)
+	(label "GPIO_7"
+		(at 274.32 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5a73717-4572-411a-97b7-c8790ce55080")
+	)
+	(label "GPIO_8"
+		(at 149.86 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8bce360-8208-467a-863b-f9e1dc7e841f")
+	)
+	(label "GPIO_4"
+		(at 217.17 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ba495ecc-d188-466d-a302-b1141ee7cf6f")
+	)
+	(label "ChainBus{SPI}"
+		(at 226.06 140.97 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bfcdde73-9530-4a4f-96a1-ee2cc9bd3fd0")
+	)
+	(label "GPIO_2"
+		(at 217.17 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5569727-6ed3-4a5c-bb41-b81d5e5146d0")
+	)
+	(label "ChainBus{SPI}"
+		(at 100.33 80.01 270)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify right bottom)
+		)
+		(uuid "ea561ef4-d33c-421d-9e14-cb2b5301e239")
+	)
+	(label "ChainBus{SPI}"
+		(at 227.33 31.75 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f2a3a06a-1ae8-4756-b2f6-a41f30cf7c64")
+	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Manufacturing:Tooling Hole, PCM_JLCPCB, 1.152mm")
-		(at 140.97 168.91 0)
+		(lib_id "Regulator_Linear:AZ1117H-ADJ")
+		(at 43.18 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "048316d6-a057-4ba2-83ef-068bb9533692")
-		(property "Reference" "H7"
-			(at 142.24 168.2749 0)
+		(uuid "01aaf389-9cca-46d3-9e17-280bae7e8b62")
+		(property "Reference" "U14"
+			(at 43.18 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AZ1117H-3.3TRE1"
+			(at 43.18 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 43.18 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/products_inactive_data/AZ1117.pdf"
+			(at 43.18 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A 20V LDO Linear Regulator, SOT-223"
+			(at 43.18 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "32b68435-e324-4fc5-a869-f21d2f2ed532")
+		)
+		(pin "2"
+			(uuid "5c26c78a-276c-4338-8dad-da39f1454a73")
+		)
+		(pin "1"
+			(uuid "b458174a-ac6e-4a35-a670-5e0984ad1cc4")
+		)
+		(instances
+			(project ""
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(reference "U14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 53.34 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0887bc96-0dd6-4e70-8f76-c94bc4895a7e")
+		(property "Reference" "C14"
+			(at 53.594 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8802,17 +9839,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 142.24 170.18 0)
+		(property "Value" "10u"
+			(at 45.466 151.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Hole_Tooling_JLCPCB"
-			(at 140.97 168.91 0)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.4"
+			(at 54.3052 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8820,8 +9858,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
-			(at 140.97 168.91 0)
+		(property "Datasheet" "~"
+			(at 53.34 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8829,8 +9867,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
-			(at 140.97 168.91 0)
+		(property "Description" "Polarized capacitor"
+			(at 53.34 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8838,19 +9876,16 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 140.97 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "1"
+			(uuid "2d854ed7-4a22-452b-ab7b-b322a4c30ed6")
+		)
+		(pin "2"
+			(uuid "a2f78edc-eb60-4018-8f8f-c5d5a9737dda")
 		)
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "H7")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -8985,17 +10020,26 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Manufacturing:Tooling Hole, PCM_JLCPCB, 1.152mm")
-		(at 149.86 168.91 0)
+		(lib_id "power:+5V")
+		(at 31.75 127 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7270eaa3-20e4-4c0f-ace2-dafd79c81abc")
-		(property "Reference" "H8"
-			(at 151.13 168.2749 0)
+		(uuid "63af1214-8b2b-4ce6-819d-108b3560defd")
+		(property "Reference" "#PWR085"
+			(at 31.75 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 31.75 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9003,17 +10047,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 151.13 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:Hole_Tooling_JLCPCB"
-			(at 149.86 168.91 0)
+		(property "Footprint" ""
+			(at 31.75 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9021,8 +10056,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
-			(at 149.86 168.91 0)
+		(property "Datasheet" ""
+			(at 31.75 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9030,8 +10065,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
-			(at 149.86 168.91 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 31.75 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9039,19 +10074,153 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 149.86 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "1"
+			(uuid "06ab949a-a6ca-44cf-812c-72796027cfed")
 		)
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "H8")
+					(reference "#PWR085")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 59.69 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "676f7437-406e-48cf-b2c2-b478d8343ba4")
+		(property "Reference" "C15"
+			(at 61.214 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 51.816 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.4"
+			(at 60.6552 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 59.69 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9dc131d-ee4e-439f-9feb-6dd0fab5bbab")
+		)
+		(pin "2"
+			(uuid "54552ce0-5223-467e-bbe9-004006d44f7f")
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 31.75 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7be63e42-8400-4540-9871-8c1e6b7bc56d")
+		(property "Reference" "C13"
+			(at 33.274 132.334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 35.56 135.0009 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.4"
+			(at 32.7152 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 31.75 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a6d7b49-067f-4e7d-92da-c6acde5eca0c")
+		)
+		(pin "2"
+			(uuid "c4af1e35-919a-49e1-9b02-fc7290f3e30c")
+		)
+		(instances
+			(project ""
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -9188,35 +10357,17 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Manufacturing:Tooling Hole, PCM_JLCPCB, 1.152mm")
-		(at 149.86 173.99 0)
+		(lib_id "power:+5V")
+		(at 53.34 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9671361b-3b51-4845-94d6-a4d8cdb90b14")
-		(property "Reference" "H9"
-			(at 151.13 173.3549 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 151.13 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:Hole_Tooling_JLCPCB"
-			(at 149.86 173.99 0)
+		(uuid "a7ecd79e-f5c1-4504-b8c7-742021ae5833")
+		(property "Reference" "#PWR086"
+			(at 53.34 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9224,8 +10375,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
-			(at 149.86 173.99 0)
+		(property "Value" "+3V3"
+			(at 53.34 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9233,8 +10392,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
-			(at 149.86 173.99 0)
+		(property "Datasheet" ""
+			(at 53.34 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9242,19 +10401,22 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 149.86 173.99 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 53.34 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "5c0bfcb0-f057-47f8-953e-ef1fa05dae0b")
 		)
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "H9")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -9665,6 +10827,136 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "power:GND")
+		(at 43.18 139.7 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa872f18-d9e6-4b4b-aebc-0004c2955b33")
+		(property "Reference" "#PWR084"
+			(at 43.18 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 43.18 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1e8491c-3be1-4b28-87fe-3b32bd4d2078")
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 227.33 91.44)
+		(size 45.72 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "12d6b693-b2d0-45e2-8962-a502dc17658e")
+		(property "Sheetname" "Thermocouple5"
+			(at 227.33 90.7284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Thermocouple.kicad_sch"
+			(at 227.33 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Chainbus{SPI}" bidirectional
+			(at 227.33 104.14 180)
+			(uuid "e80a49e1-a71f-403a-858b-78bd31b104c5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NOT_CS" input
+			(at 273.05 93.98 0)
+			(uuid "cffe657d-d7dc-4e0e-ba5a-197e1905dec9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(page "10")
+				)
+			)
+		)
+	)
 	(sheet
 		(at 62.23 17.78)
 		(size 33.02 16.51)
@@ -9718,7 +11010,193 @@
 		)
 	)
 	(sheet
-		(at 118.745 41.91)
+		(at 227.33 128.27)
+		(size 45.72 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "66f4f1b9-297d-4254-bbaa-e555fb134b73")
+		(property "Sheetname" "Thermocouple7"
+			(at 227.33 127.5584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Thermocouple.kicad_sch"
+			(at 227.33 158.0646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Chainbus{SPI}" bidirectional
+			(at 227.33 140.97 180)
+			(uuid "738155c0-48a0-4131-ba20-ac1675171933")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NOT_CS" input
+			(at 273.05 130.81 0)
+			(uuid "d486fb27-f6a0-498b-a4ee-cac41da96dd2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 170.18 128.27)
+		(size 45.72 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6b51ebb1-3268-4233-b597-dccd8d194741")
+		(property "Sheetname" "Thermocouple6"
+			(at 170.18 127.5584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Thermocouple.kicad_sch"
+			(at 170.18 158.0646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Chainbus{SPI}" bidirectional
+			(at 170.18 140.97 180)
+			(uuid "217a17a8-1277-4f2f-bd41-9696fd391554")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NOT_CS" input
+			(at 215.9 130.81 0)
+			(uuid "a4dc8410-3ee7-419a-a6d2-17bfd8214e43")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 228.6 19.05)
+		(size 45.72 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "714c9717-36e6-4fc6-92de-761da0dd61c7")
+		(property "Sheetname" "Thermocouple1"
+			(at 228.6 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Thermocouple.kicad_sch"
+			(at 228.6 48.8446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Chainbus{SPI}" bidirectional
+			(at 228.6 31.75 180)
+			(uuid "8147cf8a-b646-4c0d-9f60-3285ea58788d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NOT_CS" input
+			(at 274.32 21.59 0)
+			(uuid "94757632-a5cd-46d5-bde9-9a991fb70eba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 100.965 41.91)
 		(size 45.085 50.8)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9734,7 +11212,7 @@
 		)
 		(uuid "759d6f3d-0961-4f50-af85-ab5d1408915a")
 		(property "Sheetname" "I2C mutliplexer"
-			(at 118.745 41.1984 0)
+			(at 100.965 41.1984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9743,7 +11221,7 @@
 			)
 		)
 		(property "Sheetfile" "GPIO_expander.kicad_sch"
-			(at 118.745 93.2946 0)
+			(at 100.965 93.2946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9752,7 +11230,7 @@
 			)
 		)
 		(pin "Chainbus{I2C}" bidirectional
-			(at 118.745 77.47 180)
+			(at 100.965 77.47 180)
 			(uuid "af473035-483d-4e35-8eb6-3d3a335011ac")
 			(effects
 				(font
@@ -9761,8 +11239,8 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO_0" input
-			(at 163.83 44.45 0)
+		(pin "GPIO_0" bidirectional
+			(at 146.05 44.45 0)
 			(uuid "92129604-0888-4276-9363-731ca8d4bccb")
 			(effects
 				(font
@@ -9771,8 +11249,8 @@
 				(justify right)
 			)
 		)
-		(pin "GPIO_1" input
-			(at 163.83 46.99 0)
+		(pin "GPIO_1" bidirectional
+			(at 146.05 49.53 0)
 			(uuid "ddb20758-bd80-4228-831c-15313826dc7b")
 			(effects
 				(font
@@ -9781,8 +11259,8 @@
 				(justify right)
 			)
 		)
-		(pin "GPIO_2" input
-			(at 163.83 49.53 0)
+		(pin "GPIO_2" bidirectional
+			(at 146.05 55.88 0)
 			(uuid "c50420a0-23e7-4a02-8a0a-f0ebb0dc767b")
 			(effects
 				(font
@@ -9791,9 +11269,59 @@
 				(justify right)
 			)
 		)
-		(pin "GPIO_3" input
-			(at 163.83 52.07 0)
+		(pin "GPIO_3" bidirectional
+			(at 146.05 62.23 0)
 			(uuid "8f64914e-28bd-4e2e-8d08-196bf7d7a0a9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO_4" bidirectional
+			(at 146.05 68.58 0)
+			(uuid "429cb04d-9081-431f-aec1-a72c20875cb8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO_5" bidirectional
+			(at 146.05 74.93 0)
+			(uuid "e34a8154-6211-4c67-8d79-d7eb4d6d8895")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO_6" bidirectional
+			(at 146.05 81.28 0)
+			(uuid "4e02f6b8-7321-4f88-8522-336886d07442")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO_7" bidirectional
+			(at 146.05 86.36 0)
+			(uuid "4bd53c21-d2e3-4154-8ac8-3ccd056c4c3c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO_8" bidirectional
+			(at 146.05 91.44 0)
+			(uuid "4e7cca6a-c7db-4b7b-9e3d-7b8e7d90215a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9810,7 +11338,69 @@
 		)
 	)
 	(sheet
-		(at 118.11 101.6)
+		(at 105.41 111.76)
+		(size 45.72 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9077b647-794c-4db0-aab1-e4d5c927aedb")
+		(property "Sheetname" "Thermocouple8"
+			(at 105.41 111.0484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Thermocouple.kicad_sch"
+			(at 105.41 141.5546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Chainbus{SPI}" bidirectional
+			(at 105.41 124.46 180)
+			(uuid "28a3cf20-a43f-4631-9b62-f98b25aba88f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NOT_CS" input
+			(at 151.13 114.3 0)
+			(uuid "4c776c96-00e2-4cb8-8ef4-99b53d999ec0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 170.18 18.415)
 		(size 45.72 29.21)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9826,7 +11416,7 @@
 		)
 		(uuid "aed7f260-473a-4311-a84f-eca4f488cc9b")
 		(property "Sheetname" "Thermocouple"
-			(at 118.11 100.8884 0)
+			(at 170.18 17.7034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9835,7 +11425,7 @@
 			)
 		)
 		(property "Sheetfile" "Thermocouple.kicad_sch"
-			(at 118.11 131.3946 0)
+			(at 170.18 48.2096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9844,7 +11434,7 @@
 			)
 		)
 		(pin "Chainbus{SPI}" bidirectional
-			(at 118.11 114.3 180)
+			(at 170.18 31.75 180)
 			(uuid "44c4c27a-04f3-491f-86e5-df7db84a78c1")
 			(effects
 				(font
@@ -9854,7 +11444,7 @@
 			)
 		)
 		(pin "NOT_CS" input
-			(at 163.83 104.14 0)
+			(at 215.9 21.59 0)
 			(uuid "8f040fb8-24a4-44f0-a6fe-05771a4d58c3")
 			(effects
 				(font
@@ -9867,6 +11457,130 @@
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
 					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 228.6 53.34)
+		(size 45.72 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bca17339-29a4-4d47-9cd7-687821e17a34")
+		(property "Sheetname" "Thermocouple3"
+			(at 228.6 52.6284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Thermocouple.kicad_sch"
+			(at 228.6 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Chainbus{SPI}" bidirectional
+			(at 228.6 66.04 180)
+			(uuid "bc251ae0-9bea-4c22-bcf9-6ff61a960f2b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NOT_CS" input
+			(at 274.32 55.88 0)
+			(uuid "ab022419-3169-405c-a135-fc7a9d65334c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 170.18 53.34)
+		(size 45.72 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e702fe26-ce29-4814-8993-b3becea4c408")
+		(property "Sheetname" "Thermocouple2"
+			(at 170.18 52.6284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Thermocouple.kicad_sch"
+			(at 170.18 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Chainbus{SPI}" bidirectional
+			(at 170.18 66.04 180)
+			(uuid "96a38289-563f-4460-9f4f-e0d256d16c85")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NOT_CS" input
+			(at 215.9 55.88 0)
+			(uuid "bcb783a3-efbb-442c-8f89-cc8e30eba984")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(page "7")
 				)
 			)
 		)
@@ -9979,6 +11693,68 @@
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 170.18 92.71)
+		(size 45.72 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f8b45427-59cc-4978-bfb9-68c88167b151")
+		(property "Sheetname" "Thermocouple4"
+			(at 170.18 91.9984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Thermocouple.kicad_sch"
+			(at 170.18 122.5046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Chainbus{SPI}" bidirectional
+			(at 170.18 105.41 180)
+			(uuid "2981cbf3-606c-4044-867a-23aade11e505")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NOT_CS" input
+			(at 215.9 95.25 0)
+			(uuid "7f405fec-0832-4496-a7a2-37cec42a45f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(page "9")
 				)
 			)
 		)
