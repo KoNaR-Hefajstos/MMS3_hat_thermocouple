@@ -22,24 +22,6 @@ D16,Red,D_0603,147.971429,-136.1,-90.0,top
 D17,Red,D_0603,158.885714,-136.1,-90.0,top
 D18,Red,D_0603,169.8,-136.0,-90.0,top
 D20,Red,D_0603,175.395,-101.565,-90.0,top
-G***,LOGO,QR,106.25,-117.55,0.0,bottom
-H1,M2.5 Mount,MountingHole_2.7mm_M2.5_DIN965_Pad_TopOnly,82.0,-92.0,0.0,top
-H2,M2.5 mount,MountingHole_2.7mm_M2.5,174.0,-134.0,0.0,top
-H3,M2.5 mount,MountingHole_2.7mm_M2.5,82.0,-134.0,0.0,top
-H4,M2.5 mount,MountingHole_2.7mm_M2.5,174.0,-92.0,0.0,top
-H5,M2.5 mount,MountingHole_2.7mm_M2.5,103.0,-94.0,0.0,top
-H6,M2.5 mount,MountingHole_2.7mm_M2.5,153.0,-94.0,0.0,top
-J1,Chainbus in,PinHeader_2x16_P2.54mm_Vertical_SMD,127.99,-95.538272,270.0,bottom
-J10,Conn_01x02_Socket,JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal,132.057143,-131.455,0.0,top
-J11,Conn_01x02_Socket,JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal,142.971429,-131.455,0.0,top
-J12,Conn_01x02_Socket,JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal,153.885714,-131.455,0.0,top
-J13,Conn_01x02_Socket,JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal,164.8,-131.355,0.0,top
-J2,Chainbus Out,PinSocket_2x16_P2.54mm_Vertical_SMD,128.0,-95.558272,90.0,top
-J3,Conn_01x04_Pin,PinHeader_1x04_P2.54mm_Vertical,154.98,-100.0,90.0,top
-J6,Conn_01x02_Socket,JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal,99.980953,-131.385,0.0,top
-J7,Conn_01x02_Socket,JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal,89.4,-131.355,0.0,top
-J8,Conn_01x02_Socket,JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal,110.561905,-131.455,0.0,top
-J9,Conn_01x02_Socket,JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal,121.142858,-131.455,0.0,top
 R1,10kΩ,R_0402,148.3,-107.6,-90.0,top
 R10,330Ω,R_0402,104.780953,-133.43,-90.0,top
 R11,330Ω,R_0402,94.2,-133.4,-90.0,top
