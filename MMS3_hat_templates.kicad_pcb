@@ -8,10 +8,10 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "MMS3 Hat Stepper Controler")
-		(date "2026-02-25")
-		(rev "R0")
-		(comment 1 "Made by Wojciech Szafrański")
+		(title "MMS3 Hat Thermocouple")
+		(date "2026-04-25")
+		(rev "V1.0")
+		(comment 1 "Made by Piotr Mirecki & Wojciech Szafrański")
 		(comment 2 "Designed in poland")
 		(comment 3 "MMS3 Hat based on Chainbus")
 	)
@@ -29708,7 +29708,7 @@
 			)
 		)
 	)
-	(gr_text "Version 1.0\nMade by\nPiotr Mirecki\nchecked by\nWojciech Szafrański"
+	(gr_text "Hat Thermocouple\nVersion 1.0\nMade by\nPiotr Mirecki\nchecked by\nWojciech Szafrański"
 		(at 91 100 0)
 		(layer "F.SilkS")
 		(uuid "e3dba618-503b-4e22-9cfd-f1a4e7370b0a")
