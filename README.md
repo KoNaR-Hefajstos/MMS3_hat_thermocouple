@@ -1,4 +1,4 @@
-# Zestaw template'ów kompatybilnych z płytką MMS3 i systemem ChainBus
+#ALLALAL Zestaw template'ów kompatybilnych z płytką MMS3 i systemem ChainBus
 
 ### Łączenie hat'ów
 <p> Na jednym MMS3 można zamontować do 8 hatów. Łączy się przez wpinianie kolejnego Hat'a do złącza ChainBus wcześniejszego
