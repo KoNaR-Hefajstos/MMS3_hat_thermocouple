@@ -38,3 +38,4 @@ Urządzenia SPI podłączone są bezpośrednio do magistrali systemowej bez uży
 .
 .
 
+TBD
