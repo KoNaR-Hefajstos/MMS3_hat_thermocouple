@@ -1,35 +1,40 @@
-#ALLALAL Zestaw template'ów kompatybilnych z płytką MMS3 i systemem ChainBus
+Dokumentacja Hat'a: Moduł wejść termopar
 
-### Łączenie hat'ów
-<p> Na jednym MMS3 można zamontować do 8 hatów. Łączy się przez wpinianie kolejnego Hat'a do złącza ChainBus wcześniejszego
+## Sekcja 1: Dokumentacja Hat'a
 
-### Komunikacja oraz sterowanie
-<p> ChainBus jest w pełni cyfrowy. GPIO nie sterują bezpośrednio funkcjonalnością, tylko poprzez magistrale komunikacyjne i IC.
-<p> Znaczy to, że zamiast używać GPIO do przełączania LED'a, odczytywania krańcówek czy zadawania PWM'a musisz zaimplementować jakiegoś IC który to robi. Np:
-<p> MCU --> expander gpio po I2C --> Dioda LED
-<p> MCU wybiera do którego hat'a się podpina przy użyciu bus switcha. To znaczy że magistrale I2C, SPI i UART są niezależne od siebie na każdym hat'ie (nie musisz się martwić o zajęte adresy I2C).
-<p> Dodatkowo w celu identyfikacji każdego hat'a jest na nim pamięć EEPROM po I2C.
+### Krótki opis projektu
+Hat thermoucople umożliwia wykonywanie pomiarów temperatury przy użyciu termopar. 
+Płytka jest wyposażona w 8 wejść oraz przetwornik analogowy cyfrowy, dedykowany do obsługi termopar typu K ze zintegrowaną kompensacją zimnego końca
 
-### Zasilanie
-<p> Przez złącze ChainBus idzie następujące zasilanie
+### Zgodność ze standardem ChainBus
 
-|          |   Napięcie    | Prąd na wszystkie haty | Prąd dla jednego hat'a |
-| -------- | :-----------: | :--------------------: | ---------------------: |
-| 5V       |      5V       |           1A           |                  125mA |
-| 12V stby |      12V      |          0.5A          |                   65mA |
-| BRD_VIN  | Od 12V do 48V |          1.5A          |                  185mA |
+* ✅  Używa złącza ChainBus, nie zmienia jego miejsca ani pinoutu.
+* ✅  Używa wyłącznie interfejsów I2C, SPI lub UART i nie inicjuje samodzielnie nowych transmisji (Nie jest master'em I2C albo SPI).
+* ✅  Spełnia wymagania mechaniczne standardu (wymiary PCB, rozstaw otworów).
+* ✅  Pobiera maksymalny prąd zgodny z ilością na jednego hat'a
+* ✅  Obsługuje napięcie wejściowe BRD_VIN do wartości 48V.
 
-<p> Prąd dla jednego hat'a został policzony w wypadku kiedy wszystkie 8 hat'ów jest zamontowanych. Jeśli na jeden MMS zamontujesz mniej hat'ów to każdy może pociągnąć więcej prądu.
+### Komunikacja i adresowanie
+Układ komunikuje się za pomocą jednokierunkowego interfejsu SPI w trybie tylko do odczytu. 
+To które wyjście jest aktualnie odczytywane zależy od stanu pinu CS układu scalonego MAX31855KASA+T, do ustalaniu stanu tych pinów zastosowany został I2C multipexer
 
-<p> Hat'y powinny obsługiwać do 48V z BRD_VIN. Komponenty powinny być dostosowane aż do tego napięcia.
+| Układ (IC)                | Funkcja         |  Address   |
+| :------------             | :-------------- | :--------: |
+| **TCA9535PWR_C130204**    | I2C multiplexer | `0000000b` |
 
-<p> Jeśli twoja płytka potrzebuje więcej mocy niż ile ChainBus daje, to można dodatkowo podłączyć Vin po XT60 która obsługuje około 60A.
+#### Magistrala SPI
+Urządzenia SPI podłączone są bezpośrednio do magistrali systemowej bez użycia dodatkowych multiplekserów.
 
-<p> Jeśli potrzebujesz innych napięć to możesz użyć gotowej przetwonicy step-down z template'a. Można wybierać z niej 24V, 12V, 9V i 6V2. Wszystkie na 2A.
+| Układ (IC)         | Funkcja                     | chainbus/multiplexer |
+| :----------        | :-------------------------- | :------------------: |
+| **MAX31855KASA+T** | Sterownik silnika krokowego |      `chainbus`      |
 
-### Template Mechaniczny
-<p> Nie możesz zmieniać wielkości PCB oraz rozstawienia otworów montażowych żeby płytka była kompatybilna z ChainBus'em
-<p> Jeśli potrzebne będą w twoim projekcie, to na płytce zostały rozstawione złącza XT60 oraz konwerter step down. Te elementy nie zostały jeszcze przetestowane w złożonym układzie. <p>Jeśli twój projekt ich nie potrzebuje to możesz je na spokojnie usunąć, tylko jeśli usuwasz XT60 to pamiętaj
+### Pinout złączy
 
-### Przykładowy hat
-[Sterownik silników krokowych. Komunikacja po SPI](https://github.com/KoNaR-Hefajstos/MMS3_hat_stepper_controler)
+| Jn       | Co              | Jaki pin co robi                                                       |
+| :-----   | :---------------| :----------------------------------------------------------------------|
+| **TH00** | Termopara 1     | Pin 1 Ujemne wejście Termopary<br> Pin 2 Dodatnie wejście Termopary<br>|
+.
+.
+.
+
