@@ -1,2 +1,62 @@
-MMS3_hat_templates-backups
-.history
+# For PCBs designed using KiCad: https://www.kicad.org/
+# Format documentation: https://kicad.org/help/file-formats/
+# taken from https://github.com/github/gitignore/blob/main/KiCad.gitignore
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*-cache*
+*-bak
+*-bak*
+*~
+~*
+_autosave-*
+\#auto_saved_files\#
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+~*.lck
+\#auto_saved_files#
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+
+# Archived Backups (KiCad 6.0)
+**/*-backups/*.zip
+
+# Local git-based history (KiCad 9.0+)
+.history*
+_restore_backup_*/
+
+# Symbol rescue backups
+rescue-backup/
+
+# Exported 3D models of the board (library models in lib/*.3dshapes stay tracked)
+/*.step
+/Hardware/*.step
+
+# Fabrication outputs (JLCPCB plugin, Interactive HTML BOM)
+**/jlcpcb/
+**/bom/
+
+# Local project settings
+*.kicad_prl
+.directory
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
