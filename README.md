@@ -1,5 +1,7 @@
 Dokumentacja Hat'a: Moduł wejść termopar
 
+![zdjęcie hata](Hat_picture.jpeg)
+
 ## Sekcja 1: Dokumentacja Hat'a
 
 ### Krótki opis projektu
@@ -34,8 +36,13 @@ Urządzenia SPI podłączone są bezpośrednio do magistrali systemowej bez uży
 | Jn       | Co              | Jaki pin co robi                                                       |
 | :-----   | :---------------| :----------------------------------------------------------------------|
 | **TH00** | Termopara 1     | Pin 1 Ujemne wejście Termopary<br> Pin 2 Dodatnie wejście Termopary<br>|
-.
-.
-.
+| **TH01** | Termopara 2     | Pin 1 Ujemne wejście Termopary<br> Pin 2 Dodatnie wejście Termopary<br>|
+| **TH02** | Termopara 3     | Pin 1 Ujemne wejście Termopary<br> Pin 2 Dodatnie wejście Termopary<br>|
+| **TH03** | Termopara 4     | Pin 1 Ujemne wejście Termopary<br> Pin 2 Dodatnie wejście Termopary<br>|
+| **TH04** | Termopara 5     | Pin 1 Ujemne wejście Termopary<br> Pin 2 Dodatnie wejście Termopary<br>|
+| **TH05** | Termopara 6     | Pin 1 Ujemne wejście Termopary<br> Pin 2 Dodatnie wejście Termopary<br>|
+| **TH06** | Termopara 7     | Pin 1 Ujemne wejście Termopary<br> Pin 2 Dodatnie wejście Termopary<br>|
+| **TH07** | Termopara 8     | Pin 1 Ujemne wejście Termopary<br> Pin 2 Dodatnie wejście Termopary<br>|
 
-TBD
+### Typ możliwych termopar 
+Termopary typu K, J, N, T, S, R lub E. Przetwornik umożliwia rozdzielczość temperatury do 0,25°C, pozwala na odczyty do +1800°C i tak niskie jak -270°C, a dokładność termopary wynosi ±2°C dla temperatur od -200°C do +700°C w przypadku termopar typu K.
